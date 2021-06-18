@@ -18,5 +18,5 @@ func New() *App {
 }
 
 func (a *App) initRoutes() {
-	a.Router.HandleFunc("/", nil).Methods("GET")
+	a.Router.HandleFunc("/", a.IndexHandler()).Methods("GET")
 }
