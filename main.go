@@ -1,9 +1,9 @@
 package main
 
 import (
-	"fmt"
+	"restapi/app"
 )
 
 func main() {
-	fmt.Println("Hello World")
+	app.New()
 }
