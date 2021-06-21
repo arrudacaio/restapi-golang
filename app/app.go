@@ -14,6 +14,7 @@ type App struct {
 }
 
 func New() *App {
+
 	a := &App{
 		Router: mux.NewRouter(),
 	}
