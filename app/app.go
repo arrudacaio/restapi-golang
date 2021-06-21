@@ -2,10 +2,15 @@
 // There will be two fields, our app is going to have a DB and a Router.
 package app
 
-import "github.com/gorilla/mux"
+import (
+	"restapi/app/database"
+
+	"github.com/gorilla/mux"
+)
 
 type App struct {
 	Router *mux.Router
+	DB     database.PostDB
 }
 
 func New() *App {
